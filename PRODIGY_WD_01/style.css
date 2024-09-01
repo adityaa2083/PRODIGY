@@ -1,0 +1,493 @@
+
+
+/* ================================== GOOGLE FONT ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* ================================== basic ==========================*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.section_container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section_header{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: #0f172a;
+    
+}
+
+.section_subheader{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff5f4f;
+}
+
+.btn{
+    padding: .75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #ff5f4f;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.logo span{
+    color: #ff5f4f;
+}
+
+img{
+    display: flex;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+html,
+body{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 1rem;
+}
+
+.nav_search{
+    display: none;
+}
+
+/* =================== HEADER =============================*/
+
+.header{
+    overflow: hidden;
+}
+
+.header_container{
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    gap: 4rem 2rem;
+}
+
+.header_container::after{
+    position: absolute;
+    content: "Music";
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%) rotate(-90deg);
+    font-size: 12rem;
+    font-weight: 700;
+    color: #167bd3;
+    opacity: .2;
+    z-index: -1;
+}
+
+.header_image img{
+    max-width: 350px;
+    margin-inline: auto;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+.header_content :is(.section_subheader, h1, .header_btn){
+    text-align: center;
+}
+
+
+.header_content h1{
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: #0f172a;
+}
+
+
+/* ================================ FEATURE ====================================== */
+
+
+.feature_container :is(.section_subheader, .section_header){
+    text-align: center;
+}
+
+.feature_grid{
+    margin-top: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.feature_card{
+    padding: 2rem 1rem;
+    text-align: right;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature_card > div{
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #bcd5eb;
+    transform: rotate(-90deg);
+}
+
+.feature_card h4{
+    margin-block: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.feature_card p{
+    color: #64748b;
+}
+
+
+/* ======================= MUSIC =========================*/
+
+.music{
+    overflow: hidden;
+    background-color: #bcd5eb;
+}
+
+.music_container{
+    position: relative;
+    isolation: isolate;
+    display: grid;
+}
+
+.music_container::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: #bcd5eb;
+    z-index: -1;
+}
+
+.music_img{
+    position: relative;
+    isolation: isolate;
+}
+
+.music_img::before{
+    position: absolute;
+    content: "Music";
+    top: 50%;
+    left: 0;
+    font-size: 10rem;
+    font-weight: 700;
+    color: white;
+    transform: translate(-40%, -50%) rotate(-90deg);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.music_img::after{
+    position: absolute;
+    content: "";
+    top:0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: -2;
+}
+
+.music_img span{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-75%);
+    font-size: 20rem;
+    font-weight: 700;
+    color: #bcd5eb;
+    z-index: -1;
+}
+
+
+.music_img img{
+    max-width: 500px;
+    margin-inline: auto;
+    padding-block: 4rem;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+.music_content{
+    padding: 2rem;
+    height: 100%;
+    place-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.music_content .section_header{
+    margin-bottom: 1rem;
+}
+
+.music_content p{
+    margin-bottom: 2rem;
+    color: #64748b;
+}
+
+
+
+/* ==================== discount ===================== */
+
+.discount{
+    overflow: hidden;
+    background-color: #bcd5eb;
+}
+
+.discount_container{
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    gap: 4rem 2rem;
+}
+
+
+.discount_container::before{
+    position: absolute;
+    content: "";
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 100vh;
+    background-color: #bcd5eb;
+    z-index: -1;
+}
+
+.discount_container .discount_bg{
+    display: none;
+}
+
+.discount_content .section_header{
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.discount_content p{
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+
+.discount_btn{
+    text-align: center;
+}
+
+.discount_img{
+    position: relative;
+    isolation: isolate;
+}
+
+.discount_img::after{
+    position: absolute;
+    content: "10% Discount";
+    padding-block: .5rem;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    transform: translateY(-50%);
+    background-color: #bcd5eb;
+    z-index: 1;
+}
+
+.discount_img img{
+    max-width: 550px;
+    margin-inline: auto;
+}
+
+.discount_bg{
+    max-width: 350px;
+}
+
+
+/*====================== footer ======================*/
+
+.footer_links{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+.footer_logo{
+    grid-area: 1/1/2/4;
+}
+
+.footer_links li:not(.footer_logo) a{
+    font-weight: 500;
+    color: #0f172a;
+}
+
+.footer_links li:not(.footer_logo) a:hover{
+    color: #ff5f4f;
+}
+
+.footer_bar{
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #64748b;
+    text-align: center;
+}
+
+
+/*================================*/
+
+@media (width > 540px){
+    .feature_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+@media(width > 768px){
+
+    nav{
+        padding-block: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;    
+    }
+
+    .nav_search{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    .nav_search input{
+        padding-block: 5px;
+        outline: none;
+        border: none;
+        width: 0;
+        font-size: 1rem;
+        color: #0f172a;
+        border-bottom: 1px solid #64748b;
+        transition: 0.3s;
+    }
+
+    .nav_search.open input{
+        width: 15rem;
+    }
+
+    .nav_search span{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #0f172a;
+        cursor: pointer;
+    }
+
+    .header_container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .header_image{
+        grid-area: 1/2/2/3;
+    }
+
+    .header_content :is(.section_subheader, h1, .header_btn){
+        text-align: left;
+    }
+
+    .feature_grid{
+        margin-top: 7rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .feature_card:nth-child(2n){
+        transform: translateY(-5rem);
+    }
+
+    .music_container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .music_content.section_header{
+        word-spacing: 5px;
+        max-width: 350px;
+        margin-inline: auto;
+    }
+
+    .music_content p,
+    .music_btn{
+        max-width: 350px;
+        margin-inline: auto;
+    }
+
+    .discount_container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .discount_container .discount_bg{
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10rem;
+        z-index: 1;
+    }
+
+    .discount_content:is(.section_header, p, .discount_btn){
+        text-align:left;
+    }
+
+    .footer_links{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media( width >1024px){
+    .feature_grid{
+        gap: 2rem;
+    }
+}
